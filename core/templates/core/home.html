@@ -1,0 +1,36 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="mt-5">
+
+    <div class="text-center mt-5">
+        <img src="{% static 'core/pic1.jpg' %}" alt="ProfilePic" class="img-thumbnail" width="350px" height="350px">
+    </div>
+
+    <div class="mt-5 text-white mx-5 text-justify">
+        <h1 class="g-font font-weight-bold">Hello ,</h1>
+
+        <div class="px-4 mt-5" style="line-height: 2rem;">
+            <p style="text-indent:100px;">I am <b class="text-warning">Priyanka Biswas</b> having 5 years of full-stack
+                web development experience
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste impedit, aliquam tempora, quam inventore
+                aperiam ducimus ea dolorem nulla reprehenderit aliquid. Voluptas, illum temporibus. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Assumenda veritatis vero in perspiciatis nostrum! Voluptatem
+                ipsum architecto magni, nisi corrupti sapiente esse quidem, perspiciatis explicabo doloremque saepe
+                numquam itaque quos lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam tempora
+                deserunt esse eum. Impedit, quisquam voluptas! Laboriosam facere blanditiis saepe distinctio perferendis
+                maxime nihil debitis aspernatur, libero harum ea repellat!
+            </p>
+        </div>
+
+    </div>
+
+    <div class="text-center mt-5">
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-info my3">Contact</a>
+    </div>
+
+</div>
+{% endblock content %}
